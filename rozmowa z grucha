@@ -1,0 +1,31 @@
+# liczba = input("Ile masz gruszek? ")
+# print("Oh? " +liczba+ " To piękna liczba gruszek.")
+
+# skala_gruszki = input("W skali od 1 do 2137 ile gruszek chciałbyś mieć? ")
+# posiadane_gruszki = 2137 - int(skala_gruszki)
+# print("Brakuje ci tylko " , posiadane_gruszki ," do papieżowej ilości")
+
+
+
+def odmiana_gruszki(x):
+
+    if int(x) == 1: 
+        return("Masz " + str(x) + " gruszke!!!")
+    if int(x) >= 2 and int(x) <= 4:
+        return("Masz " + str(x) + " gruszki!!!")
+    if int(x) >= 5 and int(x) <=10:
+        return("Masz " + str(x) + " gruszek!!!")
+    if int(x) == 0:
+        return("Masz " + str(x) + " gruszek!!!")
+
+    
+while True:
+    kalkulator_moment = input("Wprowaddź ilość gruszek od 0 do 5: ")
+    kalkulator_moment_2 = input("Nie bądź taki skromny. Dorzuć jeszcze od 0 do 5 :3 ")
+    kalkulator_moment_3 = int(kalkulator_moment) + int(kalkulator_moment_2)
+    if kalkulator_moment_3  >=0 and kalkulator_moment_3 <= 10:
+        break
+    else:
+        print("ŹLE WPISAŁEŚ KOCHASIU, SPRÓBUJ ZNOWU!")
+
+print(odmiana_gruszki(kalkulator_moment_3))
